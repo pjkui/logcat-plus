@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:logcat-plus.helloWorld"
+		"onCommand:logcat-plus.helloWorld",
+		"onCommand:logcat-plus.logcat+"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "logcat-plus.helloWorld",
-				"title": "Hello World"
+				"title": "Hello World+"
+			},
+			{
+				"command": "logcat-plus.logcat+",
+				"title": "logcat+"
 			}
 		]
 	},
